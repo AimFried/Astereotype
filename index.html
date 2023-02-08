@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Astéreotype</title>
-    <link rel="icon" type="image/png" href="./image/logo.png" />
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="./image/favicon.ico" type="image/x-icon">
-  </head>
-  <body>
-    <main>
-        <h1>Bienvenue</h1>  
-    </main>
-  </body>
-  <script src="./js/script.js"></script>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Astéreotype</title>
+  <link rel="icon" type="image/png" href="./image/logo.ico" />
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="./image/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <img src="image/logo.png" />
+  <div class="contactez-nous">
+    <form action="/page-traitement-donnees" method="post">
+      <h1>Rejoins la salle virtuelle</h1>
+      <div>
+        <input type="text" id="nom" name="nom" placeholder="Nom" required>
+      </div>
+      <div>
+        <input type="text" id="code" name="code" placeholder="Code" required>
+      </div>
+      <div>
+        <button type="submit">Rejoindre</button>
+      </div>
+    </form>
+  </div>
+</body>
+<script src="./js/script.js"></script>
+
 </html>
