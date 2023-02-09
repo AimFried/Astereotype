@@ -13,9 +13,14 @@
 </head>
 
 <body style="background-image: url('./image/act_1_1.jpg');background-size: cover;">
-  <section class="row">
+  <div class="open-left-menu">
+    <a data-bs-toggle="modal" data-bs-target="#menu-left" style="cursor:pointer">
+      <i class="bi bi-caret-right-fill icon-style" style="padding: 6px;"></i>
+    </a>
+  </div>
+  <section class="row g-0">
     <article class="col-6">
-      menu deroulant
+
     </article>
     <article class="col-6">
       <div class="row text-center" style="margin: 5% 0px;">
@@ -23,7 +28,7 @@
           <img class="logo-style" src="./image/logo.png">
         </div>
       </div>
-      <div class="row">
+      <div class="row g-0">
         <div class="col-12">
           <div class="join-session-container text-center">
             <div class="join-session-header">
@@ -45,6 +50,29 @@
       </div>
     </article>
   </section>
+
+  <!-- Modal -->
+  <div class="modal fade" id="menu-left" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
   <script src="./js/script.js"></script>
   <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
 </body>

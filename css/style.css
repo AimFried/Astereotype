@@ -1,7 +1,11 @@
 
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
 :root {
 /* VARIABLES GLOBALE */
     --border-radius: 5px;
+
+    --time-animation: 0.5s;
 
     /* Couleur */
     --white-color: #fff;
@@ -11,12 +15,22 @@
     --hover-btn-color: #193d55;
 }
 
+.icon-style {
+    color: var(--white-color);
+    font-size: x-large;
+}
 
 .logo-style {
     margin: auto;
     width: auto;
     height: 180px;
     border-radius: 50%;
+    transition: var(--time-animation);
+}
+
+.logo-style:hover {
+    height: 200px;
+    transition: var(--time-animation);
 }
 
 .join-session-container {
@@ -42,12 +56,19 @@
     font-size: x-large;
     padding: 0px 50px;
     margin-bottom: 25px;
+    transition: var(--time-animation);
 }
 
 .btn-action:hover {
+    transition: var(--time-animation);
+    padding: 10px 60px;
     background-color: var(--hover-btn-color);
 }
 
+section {
+    margin: 0;
+    padding: 0;
+}
 
 input[type=text],input[type=number] {
     height: 40px;
@@ -55,4 +76,22 @@ input[type=text],input[type=number] {
     outline: none;
     border-radius: var(--border-radius);
 
+}
+
+.open-left-menu {
+    position: relative;
+    position: fixed;
+    width: 45px;
+    height: 55px;
+    border-bottom-right-radius: 200%;
+    background-color: var(--blue-color);
+    transition: var(--time-animation);
+}
+
+.open-left-menu:hover {
+    width: 55px;
+    height: 65px;
+    border-bottom-right-radius: 200%;
+    background-color: var(--hover-btn-color);
+    transition: var(--time-animation);
 }
