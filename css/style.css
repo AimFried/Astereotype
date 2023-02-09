@@ -1,53 +1,58 @@
-h1{
-    background-color: #286791;
-    color: white;
-    width: 350px;
-    max-width: 400px;
-    text-align: center;
-    border-radius: 5px;
-    height: 60px;
+
+:root {
+/* VARIABLES GLOBALE */
+    --border-radius: 5px;
+
+    /* Couleur */
+    --white-color: #fff;
+    --blue-color: #286791;
+    --grey-color: #D9D9D9;
+
+    --hover-btn-color: #193d55;
 }
 
-form{
-    background-color: #D9D9D9;
+
+.logo-style {
+    margin: auto;
+    width: auto;
+    height: 180px;
+    border-radius: 50%;
 }
 
-form div {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    min-height: 83px;
-    margin-top: 25px;
-    width: 250px;
-    max-width: 300px;
+.join-session-container {
+    margin: 0% 20%;
+    background-color: var(--grey-color);
+    border-radius: var(--border-radius);
 }
 
-form div>input,
-form div>select,
-form div>textarea {
-    background: #ffffff;
+.join-session-header {
+    background-color: var(--blue-color);
+    border-top-right-radius: var(--border-radius);
+    border-top-left-radius: var(--border-radius);
+    padding: 10px 0px;
+    color: var(--white-color);
+}
+
+.btn-action {
+    padding: 5px 15px;
+    background-color: var(--blue-color);
+    border-radius: var(--border-radius);
     border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    font-weight: 500;
-    font-family: Montserrat, "sans-serif";
+    color: var(--white-color);
+    font-size: x-large;
+    padding: 0px 50px;
+    margin-bottom: 25px;
 }
 
-form div>input,
-form div>select {
-    height: 50px;
-    padding-left: 10px;
+.btn-action:hover {
+    background-color: var(--hover-btn-color);
 }
 
-form button {
-    width: 250px;
-    max-width: 300px;
+
+input[type=text],input[type=number] {
     height: 40px;
-    font-weight: 700;
-    font-size: 28px;
-    background: #286791;
-    border: rgba(48, 48, 48, 0.5) solid 1px;
-    border-radius: 5px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    color: white;
+    border: none;
+    outline: none;
+    border-radius: var(--border-radius);
+
 }
