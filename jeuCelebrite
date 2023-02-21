@@ -26,8 +26,8 @@
     <div>
         meuf sourde inconnue + le 2ème goat + sourcil t'as peur
     </div>
-    <div>
-        
+    <div draggable="true">
+        sourd
     </div>
 </body>
 
