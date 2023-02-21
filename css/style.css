@@ -25,8 +25,13 @@
     width: auto;
     height: 180px;
     border-radius: 50%;
+    transition: var(--time-animation);
 }
 
+.logo-style:hover {
+    height: 200px;
+    transition: var(--time-animation);
+}
 
 .join-session-container {
     margin: 0% 20%;
