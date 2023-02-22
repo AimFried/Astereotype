@@ -6,19 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Astéreotype</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/jeu-celebrite.css">
     <link rel="icon" href="./image/favicon.ico" type="image/x-icon">
     <!-- Bootstrap -->
     <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- <div>
-        <h1>DECOUVRE TES CELEBRITES</h1>
-        <img src="./image/logo.png">
-    </div> -->
-    <div class="container">
-        <div class="row text-center" style="margin: 5% 0px;">
+    <div class="bande-haut">
+        <div class="row text-center">
             <div class="col">
                 <h1>Découvre tes célébrités</h1>
             </div>
@@ -27,19 +23,39 @@
             </div>
         </div>
     </div>
-    </article>
-    <h4>
-        Associer les handicaps avec la célébrité qui lui correspond
-    </h4>
-    <div>
-        naingui + l'aveugle + le nain mais plus grand + la triso
-    </div>
-    <div>
-        meuf sourde inconnue + le 2ème goat + sourcil t'as peur
-    </div>
-    <div draggable="true">
-        sourd
-    </div>
+    <div class="all-img" style="margin: 2% 0px;">
+        <h4>
+            Associer les handicaps avec la célébrité qui lui correspond
+        </h4>
+        <div class="row text-center" style="margin: 3% 0px;">
+            <div class="col">
+                <img class="img-perso" src="./image/th-modified.png">
+            </div>
+            <div class="col">
+                <img class="img-perso" src="./image/6358-gilbert-montagne-624x600-1-modified.png">
+            </div>
+            <div class="col">
+                <img class="img-perso" src="./image/Tom-Cruise-modified.png">
+            </div>
+            <div class="col">
+                <img class="img-perso"
+                    src="./image/glee-lauren-potter-in-una-foto-promozionale-della-stagione-3-213619-modified.png">
+            </div>
+        </div>
+        <div class="row text-center" style="margin: 5% 0px;">
+            <div class="col">
+                <img class="img-perso" src="./image/Marlee Matlin-modified.png">
+            </div>
+            <div class="col">
+                <img class="img-perso" src="./image/lionel-modified.png">
+            </div>
+            <div class="col">
+                <img class="img-perso" src="./image/Frida-Kahlo-modified.png">
+            </div>
+        </div>
+        <div class="bande-bas">
+            DDD
+        </div>
 </body>
 
 </html>
