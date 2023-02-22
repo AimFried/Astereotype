@@ -1,7 +1,6 @@
 .login{
-    font-weight: bolder;
+    background-color: var(--white-color);
 }
-
 
 
 .oubli-mdp{
@@ -24,12 +23,24 @@
 
 .modal-title{
     margin-left: auto;
+    color: var(--white-color);
+}
+.btn-close{
+    background-color: var(--white-color);
 }
 
+.modal-header{
+    background-color: var(--blue-color);
+}
+
+.modal-body{
+    background-color: var(--grey-color);
+}
 
 .modal-footer {
     margin:auto;
     width: auto;
     height: 210px;
     border-radius: 50%;
+    background-color: var(--grey-color);
 }
