@@ -1,3 +1,8 @@
-.modal dialog {
-    margin-left: auto;
+.modal body{
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: var(--border-radius);
+
 }
+    
