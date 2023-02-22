@@ -1,8 +1,5 @@
 .login{
-    height: 40px;
-    border: 2px;
-    outline: none;
-    border-radius: var(--border-radius);
+    border: 10;
 
 }
 .oubli-mdp{
@@ -11,7 +8,7 @@
     margin-left: 65%;
 }
 
-.btn-action {
+.btn-modal {
     padding: 5px 15px;
     background-color: var(--blue-color);
     border-radius: var(--border-radius);
