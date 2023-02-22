@@ -1,6 +1,6 @@
 .modal-body{
     height: 40px;
-    border: none;
+    border: 2px;
     outline: none;
     border-radius: var(--border-radius);
 
