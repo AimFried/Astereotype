@@ -13,10 +13,21 @@
 </head>
 
 <body>
-    <div>
+    <!-- <div>
         <h1>DECOUVRE TES CELEBRITES</h1>
         <img src="./image/logo.png">
+    </div> -->
+    <div class="container">
+        <div class="row text-center" style="margin: 5% 0px;">
+            <div class="col">
+                <h1>Découvre tes célébrités</h1>
+            </div>
+            <div class="col-4">
+                <img class="logo-style" src="./image/logo.png">
+            </div>
+        </div>
     </div>
+    </article>
     <h4>
         Associer les handicaps avec la célébrité qui lui correspond
     </h4>
