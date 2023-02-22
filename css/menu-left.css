@@ -1,11 +1,46 @@
 .login{
-    height: 40px;
-    border: 2px;
-    outline: none;
-    border-radius: var(--border-radius);
-
+    background-color: var(--white-color);
 }
+
+
 .oubli-mdp{
     text-decoration: underline;
     font-weight: bold;
+    margin-left: 65%;
+}
+
+.btn-modal {
+    padding: 5px 15px;
+    background-color: var(--blue-color);
+    border-radius: var(--border-radius);
+    border: none;
+    color: var(--white-color);
+    font-size: x-large;
+    padding: 0px 50px;
+    margin-bottom: 25px;
+    margin-left: 25%;
+}
+
+.modal-title{
+    margin-left: auto;
+    color: var(--white-color);
+}
+.btn-close{
+    background-color: var(--white-color);
+}
+
+.modal-header{
+    background-color: var(--blue-color);
+}
+
+.modal-body{
+    background-color: var(--grey-color);
+}
+
+.modal-footer {
+    margin:auto;
+    width: auto;
+    height: 210px;
+    border-radius: 50%;
+    background-color: var(--grey-color);
 }
