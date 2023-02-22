@@ -1,6 +1,13 @@
 .login{
     background-color: var(--white-color);
 }
+input[type=password]{
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: var(--border-radius);
+
+}
 
 
 .oubli-mdp{
@@ -25,9 +32,7 @@
     margin-left: auto;
     color: var(--white-color);
 }
-.btn-close{
-    background-color: var(--white-color);
-}
+
 
 .modal-header{
     background-color: var(--blue-color);
@@ -42,5 +47,4 @@
     width: auto;
     height: 210px;
     border-radius: 50%;
-    background-color: var(--grey-color);
 }
