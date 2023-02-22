@@ -5,4 +5,6 @@
     border-radius: var(--border-radius);
 
 }
-    
+.oubli-mdp{
+    text-decoration: underline;
+}
