@@ -1,7 +1,9 @@
 .login{
-    border: 10;
-
+    font-weight: bolder;
 }
+
+
+
 .oubli-mdp{
     text-decoration: underline;
     font-weight: bold;
@@ -18,4 +20,16 @@
     padding: 0px 50px;
     margin-bottom: 25px;
     margin-left: 25%;
+}
+
+.modal-title{
+    margin-left: auto;
+}
+
+
+.modal-footer {
+    margin:auto;
+    width: auto;
+    height: 210px;
+    border-radius: 50%;
 }
