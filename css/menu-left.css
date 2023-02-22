@@ -1,0 +1,11 @@
+.login{
+    height: 40px;
+    border: 2px;
+    outline: none;
+    border-radius: var(--border-radius);
+
+}
+.oubli-mdp{
+    text-decoration: underline;
+    font-weight: bold;
+}
