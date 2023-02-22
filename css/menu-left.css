@@ -1,4 +1,4 @@
-.login{
+.login {
     background-color: var(--white-color);
 }
 
@@ -10,7 +10,7 @@ input[type=password]{
 
 }
 
-.oubli-mdp{
+.oubli-mdp {
     text-decoration: underline;
     font-weight: bold;
     margin-left: 65%;
@@ -38,16 +38,16 @@ input[type=password]{
 }
 
 
-.modal-header, .modal-footer{
+.modal-header{
     background-color: var(--blue-color);
 }
 
-.modal-body{
+.modal-body, .modal-footer {
     background-color: var(--grey-color);
 }
 
 .modal-footer {
-    margin:auto;
+    margin: auto;
     width: auto;
     height: 210px;
     border-radius: 50%;

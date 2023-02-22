@@ -10,6 +10,38 @@
     <link rel="icon" href="./image/favicon.ico" type="image/x-icon">
     <!-- Bootstrap -->
     <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Drag and Drop -->
+    <style>
+        #div1,
+        #div2,
+        #div3,
+        #div4,
+        #div5,
+        #div6,
+        #div7 {
+            float: left;
+            width: 100px;
+            height: 35px;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
+        }
+    </script>
 </head>
 
 <body>
@@ -30,27 +62,34 @@
         <div class="row text-center" style="margin: 3% 0px;">
             <div class="col">
                 <img class="img-perso" src="./image/th-modified.png">
+                <div class="handicap-zone" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
             </div>
             <div class="col">
                 <img class="img-perso" src="./image/6358-gilbert-montagne-624x600-1-modified.png">
+                <div class="handicap-zone" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
             </div>
             <div class="col">
                 <img class="img-perso" src="./image/Tom-Cruise-modified.png">
+                <div class="handicap-zone" id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
             </div>
             <div class="col">
                 <img class="img-perso"
                     src="./image/glee-lauren-potter-in-una-foto-promozionale-della-stagione-3-213619-modified.png">
+                <div class="handicap-zone" id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
             </div>
         </div>
         <div class="row text-center" style="margin: 5% 0px;">
             <div class="col">
                 <img class="img-perso" src="./image/Marlee Matlin-modified.png">
+                <div class="handicap-zone" id="div5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
             </div>
             <div class="col">
                 <img class="img-perso" src="./image/lionel-modified.png">
+                <div class="handicap-zone" id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
             </div>
             <div class="col">
                 <img class="img-perso" src="./image/Frida-Kahlo-modified.png">
+                <div class="handicap-zone" id="div7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
             </div>
         </div>
         <div class="bande-bas">
