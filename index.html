@@ -37,14 +37,14 @@
             </div>
             <div class="join-session-form">
               <div class="row" style="padding: 20px 80px;">
-                <input type="text" placeholder="Nom" id="name" name="name">
+                <input type="text" placeholder="Nom" id="name" name="name" required>
               </div>
               <div class="row" style="padding: 20px 80px;">
-                <input type="number" placeholder="Code" id="code" minlength="3" maxlength="3" min="100" max="999" name="code">
+                <input type="number" placeholder="Code" id="code" minlength="3" maxlength="3" min="100" max="999" name="code" required>
               </div>
             </div>
-            <button onclick= "window.location.hreftype = ///J:/WWW/Astereotype/jeuCelebrite.html"type="submit" class="btn-action">
-              Rejoindre
+            <button type="submit" class="btn-action">
+              <a href="jeuCelebrite.html">Rejoindre</a>
             </button>
           </div>
         </div>
@@ -62,10 +62,15 @@
         </div>
         <div class="modal-body">
           <div class="row" style="padding: 20px 80px;">
-          <input type="text" placeholder="Identifiant" class="login" id="identifiant" maxlength="15">
+          <input type="text" placeholder="Identifiant" class="login" id="identifiant" maxlength="15" required>
           </div>
-          <div class="row" style="padding: 20px 80px;">
-          <input type="password" placeholder="Mot de passe" class="login" id="password" minlength="8" maxlength="25" pattern="[0-9][a-zA-Z][\(-\+]">
+            <div class="row" style="padding: 20px 80px;">
+            <input type="password" placeholder="Mot de passe" class="login" id="password">
+        	  <input type="password" placeholder="Mot de passe" class="login" id="pswd" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}$">
+            <p class="oubli-mdp"> Mot de passe oublié</p>
+          <button type="submit" class="btn-modal">
+            Connexion
+          </button>
           </div>
           <p class="oubli-mdp"> Mot de passe oublié</p>
           <button type="submit" class="btn-modal">
