@@ -25,7 +25,7 @@ input[type=password]{
     font-size: x-large;
     padding: 0px 50px;
     margin-bottom: 25px;
-    margin-left: 25%;
+    align-items: center;
 }
 
 .btn-close{
@@ -46,9 +46,10 @@ input[type=password]{
     background-color: var(--grey-color);
 }
 
-.modal-footer {
+.logo-modal {
     margin: auto;
     width: auto;
-    height: 210px;
+    height: 200px;
     border-radius: 50%;
+    align-content: center;
 }

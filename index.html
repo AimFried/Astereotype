@@ -35,18 +35,31 @@
             <div class="join-session-header">
               <h3>Rejoins la salle virtuelle</h3>
             </div>
-            <div class="join-session-form">
+            <!-- <div class="join-session-form">
+              <form>
               <div class="row" style="padding: 20px 80px;">
                 <input type="text" placeholder="Nom" id="name" name="name" required>
               </div>
               <div class="row" style="padding: 20px 80px;">
                 <input type="number" placeholder="Code" id="code" minlength="3" maxlength="3" min="100" max="999" name="code" required>
               </div>
-            </div>
-            <button type="submit" class="btn-action">
+              <button type="submit" class="btn-action">
               <a href="jeuCelebrite.html">Rejoindre</a>
-            </button>
+              </button>
+            </form>
           </div>
+          </div> -->
+          <form action="url_page_suivante" class="join-session-form" name="formSaisie">
+            <p>
+              <div class="row" style="padding: 20px 80px;">
+                <input type="text" class="row" placeholder="Nom" name="name" id="name" />
+              </div>
+              <div class="row" style="padding: 20px 80px;">
+                <input type="number" class="row" placeholder="Code" id="code" minlength="3" maxlength="3" min="100" max="999" name="code">
+              </div>
+              <input type="submit" class="btn-action" value="Rejoindre" />
+            </p>
+          </form>
         </div>
       </div>
     </article>
@@ -71,7 +84,7 @@
             Connexion
           </button>
         <div class="modal-footer">
-          <img class="logo-style" src="./image/logo.png">
+          <img class="logo-modal" src="./image/logo.png">
         </div>
       </div>
     </div>
