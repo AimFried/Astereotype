@@ -9,6 +9,14 @@
     --grey-color: #D9D9D9;
 }
 
+h1 {
+    padding-top: 1%;
+    padding-left: 45%;
+}
+
+.consigne{
+    margin-left: 1%;
+}
 
 .logo-style {
     margin: auto;
@@ -27,17 +35,40 @@
     height: 180px;
 }
 
-.bande-bas {
+.footer {
     background-color: var(--blue-color);
+    display: block;
+    border: none;
+    padding: 0;
+    margin: 0;
+    height: 200px
 }
 
 .handicap-zone {
-    height: 40px;
+    outline: none;
+    border-radius: var(--border-radius);
+    position: absolute;
+    background-color: white;
+    border: none;
+}
+
+.handicap-name {
+    height: 30px;
+    width: 100px;
+    text-align: center;
     border: none;
     outline: none;
     border-radius: var(--border-radius);
+    background-color: white;
+    /* margin-left: 30%; */
 }
 
-/* .handicap-name{
-    
-} */
+.btn-valider-jeu {
+    background-color: var(--white-color);
+    border-radius: var(--border-radius);
+    border: none;
+    color: black;
+    font-size: x-large;
+    margin-bottom: 25px;
+    margin-left: 48%;
+}
