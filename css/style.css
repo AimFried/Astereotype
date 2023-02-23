@@ -58,7 +58,7 @@ section {
     padding: 0;
 }
 
-input[type=text],input[type=number] {
+input[type=text],input[type=number]{
     height: 40px;
     border: none;
     outline: none;
