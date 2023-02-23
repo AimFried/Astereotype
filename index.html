@@ -38,10 +38,10 @@
             <form action="jeuCelebrite.html" class="join-session-form" name="formSaisie">
               <p>
                 <div class="row" style="padding: 20px 80px;">
-                  <input type="text" class="row" placeholder="Nom" name="name" id="name" />
+                  <input type="text" class="row" placeholder="Nom" name="name" id="name" required />
                 </div>
                 <div class="row" style="padding: 20px 80px;">
-                  <input type="number" class="row" placeholder="Code" id="code" minlength="3" maxlength="3" min="100" max="999" name="code">
+                  <input type="number" class="row" placeholder="Code" id="code" minlength="3" maxlength="3" min="100" max="999" name="code" required>
                 </div>
                 <input type="submit" class="btn-action" value="Rejoindre" />
               </p>
@@ -59,12 +59,12 @@
           <h1 class="modal-title fs-5" id="exampleModalLabel"> Espace intervenant</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
+        <!-- <div class="modal-body">
           <div class="row" style="padding: 20px 80px;">
-          <input type="text" placeholder="Identifiant" class="login" id="identifiant" maxlength="15" required>
+            <input type="text" placeholder="Identifiant" class="login" id="identifiant" maxlength="15" required>
           </div>
             <div class="row" style="padding: 20px 80px;">
-        	  <input type="password" placeholder="Mot de passe" class="login" id="pswd" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}$">
+        	    <input type="password" placeholder="Mot de passe" class="login" id="pswd" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}$">
             <p class="oubli-mdp"> Mot de passe oublié</p>
           <button type="submit" class="btn-modal">
             Connexion
@@ -73,7 +73,20 @@
           <img class="logo-modal" src="./image/logo.png">
         </div>
       </div>
-    </div>
+    </div> -->
+    <form action="" class="modal-body" name="formSaisie">
+      <p>
+        <div class="row" style="padding: 20px 80px;">
+          <input type="text" class="login" placeholder="Identifiant" name="identifiant" id="identifiant" minlength="3" maxlength="15" required />
+        </div>
+        <div class="row" style="padding: 20px 80px;">
+          <input type="password" class="login" placeholder="Mot de passe" id="pswd" required pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}$">
+          <a  href="" class="oubli-mdp"> Mot de passe oublié</a>
+        </div>
+        <input type="submit" class="btn-modal" value="Connexion" />
+      </p>
+        <img class="logo-modal" src="./image/logo.png">
+    </form>
   </div>
 
 

@@ -12,8 +12,9 @@ input[type=password]{
 
 .oubli-mdp {
     text-decoration: underline;
+    color: black;
     font-weight: bold;
-    margin-left: 65%;
+    margin-left: 50%;
 }
 
 .btn-modal {
@@ -25,7 +26,7 @@ input[type=password]{
     font-size: x-large;
     padding: 0px 50px;
     margin-bottom: 25px;
-    align-items: center;
+    margin-left: 30%;
 }
 
 .btn-close{
@@ -47,9 +48,8 @@ input[type=password]{
 }
 
 .logo-modal {
-    margin: auto;
     width: auto;
     height: 200px;
     border-radius: 50%;
-    align-content: center;
+    margin-left: 30%;
 }
