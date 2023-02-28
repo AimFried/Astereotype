@@ -31,7 +31,8 @@ h1 {
 
 .bande-haut {
     background-color: var(--blue-color);
-    color: var(--white-color)
+    color: var(--white-color);
+    text-transform: uppercase;
 }
 
 .img-perso {

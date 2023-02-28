@@ -1,9 +1,26 @@
-#header {
-    height: 60px;
+.header-box {
+    height: 80px;
     background-color : var(--blue-color);
     width: 100%;
     margin-right: 35%;
     margin-bottom: 4%;
+}
+
+.header-text{
+    color:var(--white-color);
+    /* font-size: 40px; */
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 1%;
+    padding-left: 45%;
+   
+} 
+
+.logo-style {
+    margin: auto;
+    width: auto;
+    height: 80px;
+    border-radius: 50%;
 }
 
 body::-webkit-scrollbar{
@@ -19,19 +36,36 @@ body::-webkit-scrollbar{
 }
 .image{
     margin-right: 15px;
-    margin-left: 5%;
+    margin-left: 2%;
     
 }
-.h2{
-    color:var(--white-color);
-    font-style: italic;
-    font-size: 4px;
-    margin-left: 25%;
-   
+
+.btn-results{
+    padding: 5px 15px;
+    background-color: var(--blue-color);
+    border-radius: var(--border-radius);
+    border: none;
+    color: var(--white-color);
+    font-size: x-large;
+    /* padding: 0px 50px; */
+    justify-content: center;
+    margin-bottom: 45%;
 }
+
+.btn-progression{
+    padding: 5px 55px;
+    background-color: var(--blue-color);
+    border-radius: var(--border-radius);
+    border: none;
+    color: var(--white-color);
+    font-size: x-large;
+}
+
 .bg-info {
-    width: 25%;
+    width: 35%;
     height: 25%;
     margin-left: 25%;
     margin-top: 5%;
+    border-radius: var(--border-radius);
+    
 }
