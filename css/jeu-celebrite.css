@@ -9,7 +9,7 @@
     --grey-color: #D9D9D9;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     display: none;
 }
 
@@ -18,7 +18,35 @@ h1 {
     padding-left: 45%;
 }
 
-.consigne{
+#div1,
+#div2,
+#div3,
+#div4,
+#div5,
+#div6,
+#div7 {
+    float: left;
+    width: 122px;
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+}
+
+#div1,
+#div2,
+#div3,
+#div4 {
+    margin-left: 8.8%;
+}
+
+#div5,
+#div6,
+#div7 {
+    margin-left: 12.95%;
+}
+
+.consigne {
     margin-left: 1%;
 }
 
@@ -51,9 +79,10 @@ h1 {
 .handicap-zone {
     outline: none;
     border-radius: var(--border-radius);
-    position: absolute;
+    /* position: absolute; */
     background-color: white;
     border: none;
+    align-self: center;
 }
 
 .handicap-name {
@@ -64,7 +93,7 @@ h1 {
     outline: none;
     border-radius: var(--border-radius);
     background-color: white;
-    /* margin-left: 30%; */
+    align-items: center;
 }
 
 .btn-valider-jeu {
@@ -74,4 +103,45 @@ h1 {
     color: black;
     font-size: x-large;
     margin-left: 48%;
+    position: relative;
+}
+
+@media (max-width: 815px) and (min-width: 612px) {
+    .btn-valider-jeu {
+        font-size: medium;
+    }
+
+    .handicap-name {
+        font-size: medium;
+    }
+
+    #div1.handicap-zone,
+    #div2.handicap-zone,
+    #div3.handicap-zone,
+    #div4.handicap-zone,
+    #div5.handicap-zone,
+    #div6.handicap-zone,
+    #div7.handicap-zone {
+        width: 85.4px;
+        height: 35px;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 611px) {
+    .btn-valider-jeu {
+        font-size: x-small;
+    }
+
+    #div1.handicap-zone,
+    #div2.handicap-zone,
+    #div3.handicap-zone,
+    #div4.handicap-zone,
+    #div5.handicap-zone,
+    #div6.handicap-zone,
+    #div7.handicap-zone {
+        width: 61px;
+        height: 25px;
+        margin: 10px;
+    }
 }

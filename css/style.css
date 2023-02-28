@@ -74,3 +74,9 @@ input[type=text],input[type=number]{
     border-bottom-right-radius: 200%;
     background-color: var(--blue-color);
 }
+
+@media (max-width: 480px) {
+    body{
+    width: 150%;
+    }
+}

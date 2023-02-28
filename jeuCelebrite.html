@@ -13,7 +13,7 @@
     <!-- Bootstrap -->
     <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet">
     <!-- Drag and Drop -->
-    <style>
+    <!-- <style>
         #div1,
         #div2,
         #div3,
@@ -40,7 +40,7 @@
         #div7 {
             margin-left: 12.95%;
         }
-    </style>
+    </style> -->
     <script>
         // Drag and drop
         function allowDrop(ev) {
@@ -78,39 +78,57 @@
             Associer les handicaps avec la célébrité qui lui correspond
         </h4>
         <form class="formJeu">
-        <div class="row text-center" style="margin: 3% 0px;">
-            <div class="col">
-                <img class="img-perso" src="./image/th-modified.png">
-                <div class="handicap-zone" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="row text-center" style="margin: 3% 0px;">
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div><img class="img-perso" src="./image/th-modified.png"></div>
+                            <div class="handicap-zone" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div><img class="img-perso" src="./image/6358-gilbert-montagne-624x600-1-modified.png"></div>
+                            <div class="handicap-zone" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div><img class="img-perso" src="./image/Tom-Cruise-modified.png"></div>
+                            <div class="handicap-zone" id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div><img class="img-perso"
+                                src="./image/glee-lauren-potter-in-una-foto-promozionale-della-stagione-3-213619-modified.png"></div>
+                            <div class="handicap-zone" id="div4" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col">
-                <img class="img-perso" src="./image/6358-gilbert-montagne-624x600-1-modified.png">
-                <div class="handicap-zone" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="row text-center" style="margin: 5% 0px;">
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div><img class="img-perso" src="./image/Marlee Matlin-modified.png"></div>
+                            <div class="handicap-zone" id="div5" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div><img class="img-perso" src="./image/lionel-modified.png"></div>
+                            <div class="handicap-zone" id="div6" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div><img class="img-perso" src="./image/Frida-Kahlo-modified.png"></div>
+                    <div class="handicap-zone" id="div7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
             </div>
-            <div class="col">
-                <img class="img-perso" src="./image/Tom-Cruise-modified.png">
-                <div class="handicap-zone" id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </div>
-            <div class="col">
-                <img class="img-perso"
-                    src="./image/glee-lauren-potter-in-una-foto-promozionale-della-stagione-3-213619-modified.png">
-                <div class="handicap-zone" id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </div>
-        </div>
-        <div class="row text-center" style="margin: 5% 0px;">
-            <div class="col">
-                <img class="img-perso" src="./image/Marlee Matlin-modified.png">
-                <div class="handicap-zone" id="div5" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </div>
-            <div class="col">
-                <img class="img-perso" src="./image/lionel-modified.png">
-                <div class="handicap-zone" id="div6" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </div>
-            <div class="col">
-                <img class="img-perso" src="./image/Frida-Kahlo-modified.png">
-                <div class="handicap-zone" id="div7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-            </div>
-        </div>
     </div>
     <div class="footer">
         <div class="row text-center">
@@ -146,7 +164,7 @@
         <button class="btn-valider-jeu">
             Valider
         </button>
-    </form class="formJeu">
+        </form class="formJeu">
     </div>
 
 </body>
