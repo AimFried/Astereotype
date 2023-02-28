@@ -82,10 +82,24 @@ input[type=text],input[type=number]{
     background-color: var(--blue-color);
 }
 
-@media (max-width: 1320px) {
+/* @media (max-width: 1320px) {
     #background-image{
     width: 800px;
     background-position: center center;
     background-attachment: fixed;
+    }
+} */
+
+@media (max-width: 800px) and (min-width: 601px){
+    .btn-action{
+        font-size: medium;
+        padding: 0px 35px;
+    }
+}
+
+@media (max-width: 600px){
+    .btn-action{
+        font-size: small;
+        padding: 0px 20px;
     }
 }
