@@ -1,0 +1,80 @@
+body{
+    background-image: url("../image/act_1_1.jpg");
+    background-size: cover;
+    background-position: center 20%;
+    background-attachment: fixed;
+}
+
+.login {
+    background-color: var(--white-color);
+}
+
+.password-forgot {
+    text-decoration: underline;
+    color: black;
+    font-weight: bold;
+    margin-left: 50%;
+}
+
+.icon-style {
+    color: var(--white-color);
+    font-size: x-large;
+}
+
+.logo-style {
+    margin: auto;
+    width: auto;
+    height: 180px;
+    border-radius: 50%;
+}
+
+
+.join-session-container {
+    margin: 0% 20%;
+    background-color: var(--grey-color);
+    border-radius: var(--border-radius);
+}
+
+.join-session-header {
+    background-color: var(--blue-color);
+    border-top-right-radius: var(--border-radius);
+    border-top-left-radius: var(--border-radius);
+    padding: 10px 0px;
+    color: var(--white-color);
+}
+
+section {
+    margin: 0;
+    padding: 0;
+}
+
+.open-left-menu {
+    position: relative;
+    position: fixed;
+    width: 45px;
+    height: 55px;
+    border-bottom-right-radius: 200%;
+    background-color: var(--blue-color);
+}
+
+/* @media (max-width: 1320px) {
+    #background-image{
+    width: 800px;
+    background-position: center center;
+    background-attachment: fixed;
+    }
+} */
+
+@media (max-width: 800px) and (min-width: 601px){
+    .btn-action{
+        font-size: medium;
+        padding: 0px 35px;
+    }
+}
+
+@media (max-width: 600px){
+    .btn-action{
+        font-size: small;
+        padding: 0px 20px;
+    }
+}

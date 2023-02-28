@@ -6,40 +6,16 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Astéreotype</title>
-    <link rel="stylesheet" href="./css/jeu-celebrite.css">
-    <link rel="icon" href="./image/favicon.ico" type="image/x-icon">
-    <!-- Bootstrap -->
-    <link href="./css/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Icon -->
+    <link rel="icon" href="../../image/favicon.ico" type="image/x-icon">
+    <!-- Title -->
+    <title>Astéreotype | Célébrités</title>
+    <!-- Link -->
+    <link rel="stylesheet" href="../../css/student/game_celebrity.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link href="../../css/bootstrap/bootstrap.min.css" rel="stylesheet">
     <!-- Drag and Drop -->
-    <!-- <style>
-        #div1,
-        #div2,
-        #div3,
-        #div4,
-        #div5,
-        #div6,
-        #div7 {
-            float: left;
-            width: 122px;
-            height: 50px;
-            margin: 10px;
-            padding: 10px;
-        }
-
-        #div1,
-        #div2,
-        #div3,
-        #div4 {
-            margin-left: 8.8%;
-        }
-
-        #div5,
-        #div6,
-        #div7 {
-            margin-left: 12.95%;
-        }
-    </style> -->
+    
     <script>
         // Drag and drop
         function allowDrop(ev) {
@@ -65,19 +41,19 @@
     </script>
 </head>
 
-<body style="background-color: #D9D9D9">
-    <div class="bande-haut">
+<body>
+    <div class="top-band">
         <div class="row text-center">
             <div class="col">
                 <h1>Découvre tes célébrités</h1>
             </div>
             <div class="col-4">
-                <img class="logo-style" src="./image/logo.png">
+                <img class="logo-style" src="../../image/logo.png">
             </div>
         </div>
     </div>
     <div class="all-img" style="margin: 2% 0px;">
-        <h4 class="consigne">
+        <h4 class="instruction">
             Associer les handicaps avec la célébrité qui lui correspond
         </h4>
         <form class="formJeu">
@@ -85,13 +61,13 @@
                 <div class="col-md-6">
                     <div class="row">
                         <div class="col-sm-6">
-                            <div><img class="img-perso" src="./image/th-modified.png"></div>
-                            <div class="handicap-zone" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <div><img class="img-perso" src="../../image/th-modified.png"></div>
+                            <div class="disability-zone" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
                             </div>
                         </div>
                         <div class="col-sm-6">
-                            <div><img class="img-perso" src="./image/6358-gilbert-montagne-624x600-1-modified.png"></div>
-                            <div class="handicap-zone" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <div><img class="img-perso" src="../../image/6358-gilbert-montagne-624x600-1-modified.png"></div>
+                            <div class="disability-zone" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
                             </div>
                         </div>
                     </div>
@@ -99,14 +75,14 @@
                 <div class="col-md-6">
                     <div class="row">
                         <div class="col-sm-6">
-                            <div><img class="img-perso" src="./image/Tom-Cruise-modified.png"></div>
-                            <div class="handicap-zone" id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <div><img class="img-perso" src="../../image/Tom-Cruise-modified.png"></div>
+                            <div class="disability-zone" id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div><img class="img-perso"
-                                src="./image/glee-lauren-potter-in-una-foto-promozionale-della-stagione-3-213619-modified.png"></div>
-                            <div class="handicap-zone" id="div4" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                src="../../image/glee-lauren-potter-in-una-foto-promozionale-della-stagione-3-213619-modified.png"></div>
+                            <div class="disability-zone" id="div4" ondrop="drop(event)" ondragover="allowDrop(event)">
                             </div>
                         </div>
                     </div>
@@ -116,51 +92,51 @@
                 <div class="col-md-8">
                     <div class="row">
                         <div class="col-sm-6">
-                            <div><img class="img-perso" src="./image/Marlee Matlin-modified.png"></div>
-                            <div class="handicap-zone" id="div5" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <div><img class="img-perso" src="../../image/Marlee Matlin-modified.png"></div>
+                            <div class="disability-zone" id="div5" ondrop="drop(event)" ondragover="allowDrop(event)">
                             </div>
                         </div>
                         <div class="col-sm-6">
-                            <div><img class="img-perso" src="./image/lionel-modified.png"></div>
-                            <div class="handicap-zone" id="div6" ondrop="drop(event)" ondragover="allowDrop(event)">
+                            <div><img class="img-perso" src="../../image/lionel-modified.png"></div>
+                            <div class="disability-zone" id="div6" ondrop="drop(event)" ondragover="allowDrop(event)">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
-                    <div><img class="img-perso" src="./image/Frida-Kahlo-modified.png"></div>
-                    <div class="handicap-zone" id="div7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                    <div><img class="img-perso" src="../../image/Frida-Kahlo-modified.png"></div>
+                    <div class="disability-zone" id="div7" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
                 </div>
             </div>
     </div>
     <div class="footer">
         <div class="row text-center">
             <div class="col" style="margin: 2% 0px;">
-                <div class="handicap-name" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+                <div class="disability-name grab" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
                     Cécité</div>
             </div>
             <div class="col" style="margin: 2% 0px;">
-                <div class="handicap-name" draggable="true" ondragstart="drag(event)" id="drag2" width="88" height="31">
+                <div class="disability-name grab" draggable="true" ondragstart="drag(event)" id="drag2" width="88" height="31">
                     Nanisme</div>
             </div>
             <div class="col" style="margin: 2% 0px;">
-                <div class="handicap-name" draggable="true" ondragstart="drag(event)" id="drag3" width="88" height="31">
+                <div class="disability-name grab" draggable="true" ondragstart="drag(event)" id="drag3" width="88" height="31">
                     Autisme</div>
             </div>
             <div class="col" style="margin: 2% 0px;">
-                <div class="handicap-name" draggable="true" ondragstart="drag(event)" id="drag4" width="88" height="31">
+                <div class="disability-name grab" draggable="true" ondragstart="drag(event)" id="drag4" width="88" height="31">
                     Surdité</div>
             </div>
             <div class="col" style="margin: 2% 0px;">
-                <div class="handicap-name" draggable="true" ondragstart="drag(event)" id="drag5" width="88" height="31">
+                <div class="disability-name grab" draggable="true" ondragstart="drag(event)" id="drag5" width="88" height="31">
                     Dyslexie</div>
             </div>
             <div class="col" style="margin: 2% 0px;">
-                <div class="handicap-name" draggable="true" ondragstart="drag(event)" id="drag6" width="88" height="31">
+                <div class="disability-name grab" draggable="true" ondragstart="drag(event)" id="drag6" width="88" height="31">
                     Polyomélite</div>
             </div>
             <div class="col" style="margin: 2% 0px;">
-                <div class="handicap-name" draggable="true" ondragstart="drag(event)" id="drag7" width="88" height="31">
+                <div class="disability-name grab" draggable="true" ondragstart="drag(event)" id="drag7" width="88" height="31">
                     Trisomie 21</div>
             </div>
         </div>

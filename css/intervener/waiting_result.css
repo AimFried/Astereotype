@@ -1,0 +1,55 @@
+.header-box {
+    height: 80px;
+    background-color : #286791;
+    width: 100%;
+    margin-right: 35%;
+    margin-bottom: 4%;
+}
+
+.header-text{
+    color:#fff;
+    /* font-size: 40px; */
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 1%;
+    padding-left: 45%;
+   
+} 
+
+.logo-style {
+    margin: auto;
+    width: auto;
+    height: 80px;
+    border-radius: 50%;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+    background-color: var(--grey-color);
+    
+}
+
+.content{
+    margin-right: 3%;
+    margin-left: 2%;  
+}
+
+img {
+    border-radius: var(--border-radius);
+    height: 550px;
+    width: auto;
+}
+
+.progress {
+    height: 50px !important;
+}
+
+.progress-bar {
+   font-size: 18px !important;
+   background-color: var(--blue-color) !important; 
+}
+
+
+
+
+
