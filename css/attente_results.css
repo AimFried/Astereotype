@@ -74,7 +74,6 @@ body::-webkit-scrollbar{
 }
 
 .progress-bar{
-    padding: 5px 55px;
     background-color: var(--blue-color);
     border-radius: var(--border-radius);
     border: none;
