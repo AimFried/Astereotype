@@ -1,3 +1,22 @@
+.header {
+    height: 110px;
+    background-color: var(--blue-color);
+    width: auto;
+    margin-top: auto;
+}
+
+.header-text{
+    color:var(--white-color);
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-left: 10%;
+}
+
+
+body {
+    background-color: var(--grey-color);
+}
+
 .slide {
     position: absolute;
     inset: 0;
@@ -15,43 +34,16 @@ body::-webkit-scrollbar{
 .carousel-control-prev {
     margin-right: 75%;
     margin-bottom:95%;
-    position: absolutes;
-
+    position: absolute;
 }
 .carousel-control-next{
     margin-right: 15%;
     margin-bottom:95%;
     position: absolute;
 }
+
 .carousel-item {
-    width: 870px;
-    
-}
-
-
-
-body {
-    margin: 0;
-    
-}
-
-#header {
-    height: 82px;
-    background: #0b6dec;
-    width: 45%;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-top: 2.1%;
-    
-    
-}
-.h2{
-    color:white;
-    font-style: italic;
-    font-size: 30px;
-    margin-left: 25%;
-  
-    
+  width: 870px;
 }
 
 .row {
@@ -59,10 +51,20 @@ body {
     margin-left: 13%;
     width: 35%;
     height: 35%;
-    
 }
-p{
-    margin-left: 14%;
-    color: gold;
-    margin-bottom: 25%;
+
+.btn-start{
+    padding: 12px 55px;
+    background-color: var(--blue-color);
+    border-radius: var(--border-radius);
+    border: none;
+    color: var(--white-color);
+    justify-content: center;
+    margin-bottom: auto;
+}
+
+.btn{
+    color: var(--white-color);
+    font-size: x-large;
+    border: none;
 }
