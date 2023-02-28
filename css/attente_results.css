@@ -1,6 +1,6 @@
 #header {
     height: 60px;
-    background: #0b6dec;
+    background-color : var(--blue-color);
     width: 100%;
     margin-right: 35%;
     margin-bottom: 4%;
@@ -8,6 +8,7 @@
 
 body::-webkit-scrollbar{
     display: none;
+    
 }
 
 .col-12{
@@ -22,7 +23,7 @@ body::-webkit-scrollbar{
     
 }
 .h2{
-    color:white;
+    color:var(--white-color);
     font-style: italic;
     font-size: 4px;
     margin-left: 25%;
