@@ -43,11 +43,12 @@ body::-webkit-scrollbar{
 }
 
 .carousel-item {
-  width: 870px;
+  width: 75%;
+  margin-left: 17%;
 }
 
 .row {
-    margin-top: 38%;
+    margin-top: 36%;
     margin-left: 13%;
     width: 35%;
     height: 35%;
