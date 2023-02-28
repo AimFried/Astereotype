@@ -15,6 +15,13 @@
     --hover-btn-color: #193d55;
 }
 
+body{
+    background-image: url("../image/act_1_1.jpg");
+    background-size: cover;
+    background-position: center 20%;
+    background-attachment: fixed;
+}
+
 .icon-style {
     color: var(--white-color);
     font-size: x-large;
@@ -75,8 +82,10 @@ input[type=text],input[type=number]{
     background-color: var(--blue-color);
 }
 
-@media (max-width: 480px) {
-    body{
-    width: 150%;
+@media (max-width: 1320px) {
+    #background-image{
+    width: 800px;
+    background-position: center center;
+    background-attachment: fixed;
     }
 }
