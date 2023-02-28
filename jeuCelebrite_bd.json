@@ -1,0 +1,43 @@
+[
+   {
+        "nom": "Dinklage" ,
+        "image": "image\\th-modified.png" ,
+        "handicap": "Nainisme"
+    },
+
+    {
+        "nom": "Montagne",
+        "image": "image\\6358-gilbert-montagne-624x600-1-modified.png" ,
+        "handicap": "Cécité"
+    },
+
+    {
+        "nom": "Cruise",
+        "image": "image\\Tom-Cruise-modified.png",
+        "handicap": "Dyslexie" 
+    },
+
+    {
+        "nom": "Potter",
+        "image": "image\\glee-lauren-potter-in-una-foto-promozionale-della-stagione-3-213619-modified.png",
+        "handicap": "Trisomie 21"
+    },
+
+    {
+        "nom": "Matlin" ,
+        "image": "image\\Marlee Matlin-modified.png",
+        "handicap": "Surdité"
+    },
+
+    {
+        "nom": "Messi",
+        "image": "image\\lionel-modified.png",
+        "handicap": "Autisme"
+    },
+
+    {
+        "nom": "Kahlo",
+        "image": "image\\Frida-Kahlo-modified.png",
+        "handicap":"Polyomélite"
+    }
+]
