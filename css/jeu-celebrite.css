@@ -79,7 +79,7 @@ h1 {
 .handicap-zone {
     outline: none;
     border-radius: var(--border-radius);
-    /* position: absolute; */
+    margin: 0 auto;
     background-color: white;
     border: none;
     align-self: center;
@@ -88,12 +88,11 @@ h1 {
 .handicap-name {
     height: 30px;
     width: 100px;
-    text-align: center;
     border: none;
     outline: none;
     border-radius: var(--border-radius);
     background-color: white;
-    align-items: center;
+    margin: 0 auto;
 }
 
 .btn-valider-jeu {
@@ -112,7 +111,9 @@ h1 {
     }
 
     .handicap-name {
-        font-size: medium;
+        font-size: small;
+        height: 21px;
+        width: 70px;
     }
 
     #div1.handicap-zone,
@@ -128,6 +129,7 @@ h1 {
     }
 }
 
+
 @media (max-width: 611px) {
     .btn-valider-jeu {
         font-size: x-small;
@@ -140,8 +142,14 @@ h1 {
     #div5.handicap-zone,
     #div6.handicap-zone,
     #div7.handicap-zone {
-        width: 61px;
-        height: 25px;
+        width: 73.2px;
+        height: 30px;
         margin: 10px;
+    }
+
+    .handicap-name {
+        font-size: small;
+        height: 18px;
+        width: 60px;
     }
 }
