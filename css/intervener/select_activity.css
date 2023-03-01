@@ -3,7 +3,7 @@ body {
 }
 
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     display: none;
 }
 
@@ -12,7 +12,7 @@ body::-webkit-scrollbar{
     background-color: var(--grey-color);
     /* width: 100%; */
     height: 100%;
-    width:115.5%;
+    width: 115.5%;
 }
 
 .top-banner {
@@ -21,11 +21,11 @@ body::-webkit-scrollbar{
     align-items: baseline;
     justify-content: center;
     background-color: var(--blue-color);
-    height:11.5%;
+    height: 11.5%;
     color: var(--white-color);
 }
 
-.header-text{
+.header-text {
     text-transform: uppercase;
 }
 
@@ -33,18 +33,18 @@ article {
     padding: 5% 10%;
     font-size: 20px;
     text-align: justify;
-    
+
 }
 
-section > button {
+section>button {
     position: fixed;
     bottom: 55px;
     left: 327px;
 }
 
-aside > img {
-  height: 100%;
-  padding-left: 11%;
+aside>img {
+    height: 100%;
+    padding-left: 11%;
 }
 
 .open-right-menu {
@@ -61,7 +61,54 @@ aside > img {
     font-size: x-large;
 }
 
-.btn-start{
+.btn-start {
     text-decoration: none;
     color: var(--white-color);
+}
+
+/* Modal */
+
+.open-right-menu {
+    scale: 1;
+    transition: var(--time-animation) scale;
+}
+
+.open-right-menu:hover {
+    background-color: var(--hover-btn-color);
+    scale: 1.2;
+    transition: var(--time-animation) scale;
+}
+
+
+.modal-title {
+    margin-left: auto;
+    color: var(--white-color);
+}
+
+
+.modal-header {
+    background-color: var(--blue-color);
+}
+
+.share-option {
+    background-color: var(--grey-color);
+}
+
+.room-code {
+    padding: 5px;
+    width: 26%;
+    background-color: var(--white-color);
+    border-radius: var(--border-radius);
+    border: none;
+    color: var(--back-color);
+    font-size: x-large;
+    margin-top: 25%;
+    margin-left: 25%;
+    
+
+}
+
+.symbol {
+    width: 15%;
+    
 }
