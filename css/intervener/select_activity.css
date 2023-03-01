@@ -62,21 +62,29 @@ aside>img {
 }
 
 .btn-start {
-    padding: 10px 20px;
-    background-color: var(--hover-btn-color);
+    /* padding: 10px 20px; */
+    background-color: var(--blue-color);
     border-radius: var(--border-radius);
     border: none;
     color: var(--white-color);
     font-size: x-large;
-    scale: 1;
-    transition: var(--time-animation);
+    padding: 5px 15px;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 45%;
+
 }
 
-.btn-action:hover {
-    background-color: var(--hover-btn-color);
-    scale: 1.1;
-    transition: var(--time-animation) scale;
+.btn-starting {
+    /* padding: 10px 20px; */
+    background-color: var(--blue-color);
+    border-radius: var(--border-radius);
+    border: none;
+    color: var(--white-color);
+    font-size: x-large;
+
 }
+
 /* Modal */
 
 .open-right-menu {
