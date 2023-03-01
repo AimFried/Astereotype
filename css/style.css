@@ -47,7 +47,7 @@ input[type=password] {
     border: none;
     color: var(--white-color);
     font-size: x-large;
-    scale:1;
+    scale: 1;
     transition: var(--time-animation);
 }
 
@@ -70,7 +70,7 @@ input[type=password] {
     padding: 0px 50px;
     margin-bottom: 25px;
     margin-left: 30%;
-    scale:1;
+    scale: 1;
     transition: var(--time-animation);
 }
 
@@ -79,6 +79,18 @@ input[type=password] {
     scale: 1.1;
     transition: var(--time-animation) scale;
 }
+
+.open-left-menu {
+    scale: 1;
+    transition: var(--time-animation) scale;
+}
+
+.open-left-menu:hover {
+    background-color: var(--hover-btn-color);
+    scale: 1.1;
+    transition: var(--time-animation) scale;
+}
+
 
 .btn-close {
     color: var(--white-color);

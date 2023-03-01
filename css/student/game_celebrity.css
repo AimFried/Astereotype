@@ -76,13 +76,23 @@ h1 {
 }
 
 .btn-validation-game {
-    background-color: var(--white-color);
+    padding: 5px 15px;
+    background-color: var(--grey-color);
     border-radius: var(--border-radius);
     border: none;
     color: var(--back-color);
     font-size: x-large;
     margin-left: 48%;
     position: relative;
+    scale:1;
+    transition: var(--time-animation);
+}
+
+.btn-validation-game:hover{
+    background-color: var(--hover-btn-color);
+    scale: 1.1;
+    transition: var(--time-animation) scale;
+
 }
 
 @media (max-width: 815px) and (min-width: 612px) {
