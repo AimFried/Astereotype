@@ -75,7 +75,7 @@ h1 {
     margin: 0 auto;
 }
 
-.btn-valider-jeu {
+.btn-validation-game {
     background-color: var(--white-color);
     border-radius: var(--border-radius);
     border: none;
@@ -86,7 +86,7 @@ h1 {
 }
 
 @media (max-width: 815px) and (min-width: 612px) {
-    .btn-valider-jeu {
+    .btn-validation-game {
         font-size: medium;
     }
 
