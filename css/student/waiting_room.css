@@ -1,4 +1,4 @@
-body{
+body {
     background-image: url("../../image/Maloyn-Chatelin-Act1.jpg") !important;
     background-size: cover;
     background-position: center 20%;
@@ -13,12 +13,12 @@ body{
     background-color: var(--blue-color);
 }
 
-.top-banner-style > img {
-   position: absolute;
-   height: 80px;
-   width: auto;
-   right: 50px;
-   bottom: 13px;
+.top-banner-style>img {
+    position: absolute;
+    height: 80px;
+    width: auto;
+    right: 50px;
+    bottom: 13px;
 }
 
 .top-banner-title {
@@ -32,4 +32,3 @@ body{
     background-color: var(--blue-color);
     opacity: 0.7;
 }
-

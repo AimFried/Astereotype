@@ -1,20 +1,20 @@
 .header-box {
     height: 80px;
-    background-color : #286791;
+    background-color: #286791;
     width: 100%;
     margin-right: 35%;
     margin-bottom: 4%;
 }
 
-.header-text{
-    color:#fff;
+.header-text {
+    color: #fff;
     /* font-size: 40px; */
     text-transform: uppercase;
     text-align: center;
     padding-top: 1%;
     padding-left: 45%;
-   
-} 
+
+}
 
 .logo-style {
     margin: auto;
@@ -23,15 +23,15 @@
     border-radius: 50%;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
     display: none;
     background-color: var(--grey-color);
-    
+
 }
 
-.content{
+.content {
     margin-right: 3%;
-    margin-left: 2%;  
+    margin-left: 2%;
 }
 
 img {
@@ -45,22 +45,19 @@ img {
 }
 
 .progress-bar {
-   font-size: 18px !important;
-   background-color: var(--blue-color) !important; 
-   transition: var(--time-animation) !important;
+    font-size: 18px !important;
+    background-color: var(--blue-color) !important;
+    transition: var(--time-animation) !important;
 }
 
-.progress-bar:hover{
-    transition: var(--time-animation)!important;
+.progress-bar:hover {
+    transition: var(--time-animation) !important;
     border-radius: var(--border-radius) !important;
     font-weight: bold;
 }
 
-.btn-action:hover{
+.btn-action:hover {
     background-color: var(--hover-btn-color);
     scale: 1.1;
     transition: var(--time-animation) scale;
 }
-
-
-

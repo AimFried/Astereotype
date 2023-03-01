@@ -1,5 +1,3 @@
-
-
 body::-webkit-scrollbar {
     display: none;
     background-color: var(--grey-color);
@@ -22,7 +20,7 @@ h1 {
     margin: 10px;
     padding: 10px;
     align-items: center;
-    margin:auto;
+    margin: auto;
 }
 
 .instruction {
@@ -84,11 +82,11 @@ h1 {
     font-size: x-large;
     margin-left: 48%;
     position: relative;
-    scale:1;
+    scale: 1;
     transition: var(--time-animation);
 }
 
-.btn-validation-game:hover{
+.btn-validation-game:hover {
     background-color: var(--hover-btn-color);
     scale: 1.1;
     transition: var(--time-animation) scale;
