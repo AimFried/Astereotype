@@ -2,52 +2,77 @@
 <html lang="fr">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     <!-- Icon -->
-    <link rel="icon" href="../../image/favicon.ico" type="image/x-icon">
-     <!-- Title -->
-    <title>Astéreotype | Sélection d'activités</title>
-    <!-- Link -->
-    <link href="../../css/intervener/select_activity.css" rel="stylesheet" type="text/css">
-    <link href="../../css/style.css" rel="stylesheet" type="text/css">
-    <link href="../../css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Icon -->
+  <link rel="icon" href="../../image/favicon.ico" type="image/x-icon">
+  <!-- Title -->
+  <title>Astéreotype | Sélection d'activités</title>
+  <!-- Link -->
+  <link href="../../css/intervener/select_activity.css" rel="stylesheet" type="text/css">
+  <link href="../../css/style.css" rel="stylesheet" type="text/css">
+  <link href="../../css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+
 
 </head>
 
 <body>
   <div class="open-right-menu">
-    <a class="pointer"  data-bs-toggle="modal" data-bs-target="#menu-left">
+    <a class="pointer" data-bs-toggle="modal" data-bs-target="#menu-right">
       <i class="bi bi-people-fill icon-style icon-style" style="margin-left: 15px;"></i>
     </a>
+
+
   </div>
-   <div class="row vh-100">
+  <div class="row vh-100">
     <div class="col-5 p-0">
       <section class="select-activity-style text-center">
         <div class="top-banner">
           <i class="bi bi-caret-left pointer" style="font-size:xxx-large;margin-right: 60px;"></i>
-          <h1>DECOUVRE TES CELEBRITES</h1>
+          <h1 class="header-text">Découvre tes célébrités</h1>
           <i class="bi bi-caret-right pointer" style="font-size:xxx-large;margin-left: 60px;"></i>
         </div>
         <article>
-          Emensis itaque difficultatibus multis et nive obrutis callibus plurimis ubi 
-          prope Rauracum ventum est ad supercilia fluminis Rheni, resistente multitudine 
-          Alamanna pontem suspendere navium conpage Romani vi nimia vetabantur ritu grandinis 
-          undique convolantibus telis, et cum id inpossibile.
+          Le jeu consiste à relier des handicaps à des célébrités qui les ont surmontés dans leur vie.
+          Les joueurs doivent faire correspondre les handicaps avec les bonnes célébrités en utilisant
+          leurs connaissances et leur réflexion logique. Le but est découvrir les histoires inspirantes
+          de personnes célèbres qui ont surmonté des obstacles et de promouvoir l'empathie et l'inclusion
+          pour les personnes atteintes d'handicaps.
         </article>
-        <button class="btn-action"><a href="./waiting_result.html">Commencer</a></button>
+        <button class="btn-action"><a href="./waiting_result.html" class="btn-start">Commencer</a></button>
       </section>
     </div>
     <div class="col-7 p-0">
       <aside>
-        <img src="../../image/einstein.png">
+        <img src="../../image/einstein2.png">
       </aside>
     </div>
-   </div>
-    
+  </div>
 
-    <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
+
+  <!-- Modal -->
+  <div class="modal fade" id="menu-right" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Utilisateurs</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="share-option">
+          <p class="room-code">Code salon</p>
+          <img src="../../image/partage.png" class="symbol">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- <script src="./js/script.js"></script> -->
+  <script src="../../js/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </body>
 
 </html>

@@ -47,9 +47,20 @@ img {
 .progress-bar {
    font-size: 18px !important;
    background-color: var(--blue-color) !important; 
+   transition: var(--time-animation) !important;
 }
 
+.progress-bar:hover{
+    transition: var(--time-animation)!important;
+    border-radius: var(--border-radius) !important;
+    font-weight: bold;
+}
 
+.btn-action:hover{
+    background-color: var(--hover-btn-color);
+    scale: 1.1;
+    transition: var(--time-animation) scale;
+}
 
 
 

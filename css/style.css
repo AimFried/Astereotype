@@ -1,7 +1,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
 
 :root {
-/* VARIABLES GLOBALE */
+    /* VARIABLES GLOBALE */
     --border-radius: 5px;
 
     --time-animation: 0.5s;
@@ -19,7 +19,7 @@
 /* cursor */
 
 .pointer {
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .grab {
@@ -27,79 +27,94 @@
 }
 
 /* Input */
-    
-    input[type=text], input[type=number], input[type=password]{
-        height: 40px;
-        border: none;
-        outline: none;
-        border-radius: var(--border-radius);
 
-    }
+input[type=text],
+input[type=number],
+input[type=password] {
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: var(--border-radius);
+
+}
 
 /* Button */
 
-    .btn-action {
-        padding: 10px 20px;
-        background-color: var(--blue-color);
-        border-radius: var(--border-radius);
-        border: none;
-        color: var(--white-color);
-        font-size: x-large;
-    }
+.btn-action {
+    padding: 10px 20px;
+    background-color: var(--blue-color);
+    border-radius: var(--border-radius);
+    border: none;
+    color: var(--white-color);
+    font-size: x-large;
+    scale: 1;
+    transition: var(--time-animation);
+}
+
+.btn-action:hover {
+    background-color: var(--hover-btn-color);
+    scale: 1.1;
+    transition: var(--time-animation) scale;
+}
 
 
 /* Modal */
 
-    .btn-modal {
-        padding: 5px 15px;
-        background-color: var(--blue-color);
-        border-radius: var(--border-radius);
-        border: none;
-        color: var(--white-color);
-        font-size: x-large;
-        padding: 0px 50px;
-        margin-bottom: 25px;
-        margin-left: 30%;
-    }
+.btn-modal {
+    padding: 5px 15px;
+    background-color: var(--blue-color);
+    border-radius: var(--border-radius);
+    border: none;
+    color: var(--white-color);
+    font-size: x-large;
+    padding: 0px 50px;
+    margin-bottom: 25px;
+    margin-left: 30%;
+    scale: 1;
+    transition: var(--time-animation);
+}
 
-    .btn-close{
-        color: var(--white-color);
-    }
+.btn-modal:hover {
+    background-color: var(--hover-btn-color);
+    scale: 1.1;
+    transition: var(--time-animation) scale;
+}
 
-    .modal-title{
-        margin-left: auto;
-        color: var(--white-color);
-    }
+.open-left-menu {
+    scale: 1;
+    transition: var(--time-animation) scale;
+}
 
-
-    .modal-header{
-        background-color: var(--blue-color);
-    }
-
-    .modal-body, .modal-footer {
-        background-color: var(--grey-color);
-    }
-
-
-    .logo-modal {
-        width: auto;
-        height: 200px;
-        border-radius: 50%;
-        margin-left: 30%;
-    }
+.open-left-menu:hover {
+    background-color: var(--hover-btn-color);
+    scale: 1.1;
+    transition: var(--time-animation) scale;
+}
 
 
+.btn-close {
+    color: var(--white-color);
+}
+
+.modal-title {
+    margin-left: auto;
+    color: var(--white-color);
+}
 
 
+.modal-header {
+    background-color: var(--blue-color);
+}
+
+.modal-body,
+.modal-footer {
+    background-color: var(--grey-color);
+}
 
 
-
-
-
-
-
-
-
-
-
-
+.logo-modal {
+    width: auto;
+    height: 200px;
+    border-radius: 50%;
+    margin-left: 30%;
+}
