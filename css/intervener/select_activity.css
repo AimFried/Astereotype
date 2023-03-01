@@ -62,10 +62,21 @@ aside>img {
 }
 
 .btn-start {
-    text-decoration: none;
+    padding: 10px 20px;
+    background-color: var(--hover-btn-color);
+    border-radius: var(--border-radius);
+    border: none;
     color: var(--white-color);
+    font-size: x-large;
+    scale: 1;
+    transition: var(--time-animation);
 }
 
+.btn-action:hover {
+    background-color: var(--hover-btn-color);
+    scale: 1.1;
+    transition: var(--time-animation) scale;
+}
 /* Modal */
 
 .open-right-menu {
