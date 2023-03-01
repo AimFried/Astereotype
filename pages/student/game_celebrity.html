@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../../css/style.css">
     <link href="../../css/bootstrap/bootstrap.min.css" rel="stylesheet">
     <!-- Drag and Drop -->
-    
+
     <script>
         // Drag and drop
         function allowDrop(ev) {
@@ -31,13 +31,20 @@
             var data = ev.dataTransfer.getData("text");
             ev.target.appendChild(document.getElementById(data));
         }
-        // Fonction vérification réponses
-        var myJSON = '{"nom": "Dinklage" ,"image": "image\\th-modified.png" ,"handicap": "Nanisme"}';
-        var answers = JSON.parse(myJSON);
-        document.getElementById("div1").innerHTML= answers.handicap;
-        var myJSON = '{ "nom":"Dinklage", "image":"image\\th-modified.png", "handicap":"Nanisme" }';
-        var myObj = JSON.parse(myJSON);
-        document.getElementById("div1").innerHTML = myObj.handicap;
+        //Sound on images
+        // function sound(sound) {
+        //     var audio = document.createElement('audio');
+        //     audio.preload = 'auto';
+        //     var oggSource = document.createElement('source');
+        //     oggSource.src = sound + '.ogg';
+        //     oggSource.type = 'audio/ogg';
+        //     var mp3Source = document.createElement('source');
+        //     mp3Source.src = sound + '.mp3';
+        //     mp3Source.type = 'audio/mpeg';
+        //     audio.appendChild(oggSource);
+        //     audio.appendChild(mp3Source);
+        //     audio.play();
+        // }
     </script>
 </head>
 
@@ -61,12 +68,14 @@
                 <div class="col-md-6">
                     <div class="row">
                         <div class="col-sm-6">
-                            <div><img class="img-perso" src="../../image/th-modified.png"></div>
+                            <!-- onclick="sound('../../sons/3571.mp3')" -->
+                             <div><img class="img-perso" src="../../image/th-modified.png"></div> 
                             <div class="disability-zone" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
                             </div>
                         </div>
                         <div class="col-sm-6">
-                            <div><img class="img-perso" src="../../image/6358-gilbert-montagne-624x600-1-modified.png"></div>
+                            <div><img class="img-perso" src="../../image/6358-gilbert-montagne-624x600-1-modified.png">
+                            </div>
                             <div class="disability-zone" id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
                             </div>
                         </div>
@@ -81,7 +90,8 @@
                         </div>
                         <div class="col-sm-6">
                             <div><img class="img-perso"
-                                src="../../image/glee-lauren-potter-in-una-foto-promozionale-della-stagione-3-213619-modified.png"></div>
+                                    src="../../image/glee-lauren-potter-in-una-foto-promozionale-della-stagione-3-213619-modified.png">
+                            </div>
                             <div class="disability-zone" id="div4" ondrop="drop(event)" ondragover="allowDrop(event)">
                             </div>
                         </div>
@@ -112,31 +122,38 @@
     <div class="footer">
         <div class="row text-center">
             <div class="col" style="margin: 2% 0px;">
-                <div class="disability-name grab" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+                <div class="disability-name grab" draggable="true" ondragstart="drag(event)" id="drag1" width="88"
+                    height="31">
                     Cécité</div>
             </div>
             <div class="col" style="margin: 2% 0px;">
-                <div class="disability-name grab" draggable="true" ondragstart="drag(event)" id="drag2" width="88" height="31">
+                <div class="disability-name grab" draggable="true" ondragstart="drag(event)" id="drag2" width="88"
+                    height="31">
                     Nanisme</div>
             </div>
             <div class="col" style="margin: 2% 0px;">
-                <div class="disability-name grab" draggable="true" ondragstart="drag(event)" id="drag3" width="88" height="31">
+                <div class="disability-name grab" draggable="true" ondragstart="drag(event)" id="drag3" width="88"
+                    height="31">
                     Autisme</div>
             </div>
             <div class="col" style="margin: 2% 0px;">
-                <div class="disability-name grab" draggable="true" ondragstart="drag(event)" id="drag4" width="88" height="31">
+                <div class="disability-name grab" draggable="true" ondragstart="drag(event)" id="drag4" width="88"
+                    height="31">
                     Surdité</div>
             </div>
             <div class="col" style="margin: 2% 0px;">
-                <div class="disability-name grab" draggable="true" ondragstart="drag(event)" id="drag5" width="88" height="31">
+                <div class="disability-name grab" draggable="true" ondragstart="drag(event)" id="drag5" width="88"
+                    height="31">
                     Dyslexie</div>
             </div>
             <div class="col" style="margin: 2% 0px;">
-                <div class="disability-name grab" draggable="true" ondragstart="drag(event)" id="drag6" width="88" height="31">
+                <div class="disability-name grab" draggable="true" ondragstart="drag(event)" id="drag6" width="88"
+                    height="31">
                     Polyomélite</div>
             </div>
             <div class="col" style="margin: 2% 0px;">
-                <div class="disability-name grab" draggable="true" ondragstart="drag(event)" id="drag7" width="88" height="31">
+                <div class="disability-name grab" draggable="true" ondragstart="drag(event)" id="drag7" width="88"
+                    height="31">
                     Trisomie 21</div>
             </div>
         </div>
