@@ -131,18 +131,28 @@ aside>img {
 .users-list {
     background-color: var(--grey-color);
     text-transform: capitalize;
-    text-align:left;
+    text-align: left;
     font-size: 25px;
     width: 60%;
     margin: auto;
 
 }
 
-.modal-block{
+.modal-block {
     background-color: var(--grey-color);
 }
 
 .users-list td {
+    padding-top: 2%;
     border-bottom: 2px solid;
     border-color: var(--back-color);
+}
+.bi{
+    scale:1;
+    transition: var(--time-animation);
+}
+
+.bi:hover {
+    scale: 1.2;
+    transition: var(--time-animation) scale;
 }
