@@ -104,7 +104,6 @@ aside>img {
     color: var(--white-color);
 }
 
-
 .modal-header {
     background-color: var(--blue-color);
 }
@@ -127,4 +126,23 @@ aside>img {
 
 .symbol {
     width: 10%;
+}
+
+.users-list {
+    background-color: var(--grey-color);
+    text-transform: capitalize;
+    text-align:left;
+    font-size: 25px;
+    width: 60%;
+    margin: auto;
+
+}
+
+.modal-block{
+    background-color: var(--grey-color);
+}
+
+.users-list td {
+    border-bottom: 2px solid;
+    border-color: var(--back-color);
 }
