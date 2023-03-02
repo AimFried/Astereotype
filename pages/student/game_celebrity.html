@@ -33,6 +33,30 @@
             ev.target.appendChild(document.getElementById(data));
             console.log(ev);
         }
+
+        function checkPersons() {
+            const personsElements = document.getElementsByClassName('person');
+            let check = true;
+            for (const el of personsElements) {
+                check &&= checkPerson(el.id);
+            }
+            console.log(check);
+        }
+
+        function checkPerson(personId) {
+            const personEl = document.getElementById(personId);
+            const personData = persons[personId];
+            if (personEl && personData) {
+                const disabilitiesElements =
+                    personEl.getElementsByClassName('disablity');
+                if (disabilitiesElements.length > 0) {
+                    if (personData.disability === disabilitiesElements[0].id) {
+                        return true;
+                    }
+                }
+            }
+            return false;
+        }
     </script>
 </head>
 
@@ -160,7 +184,7 @@
                             Trisomie 21</div>
                     </div>
                 </div>
-                <button class="btn-validation-game">
+                <button onclick="checkPersons()" class="btn-validation-game">
                     Valider
                 </button>
         </form class="formJeu">
