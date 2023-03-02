@@ -62,8 +62,27 @@ aside>img {
 }
 
 .btn-start {
-    text-decoration: none;
+    /* padding: 10px 20px; */
+    background-color: var(--blue-color);
+    border-radius: var(--border-radius);
+    border: none;
     color: var(--white-color);
+    font-size: x-large;
+    padding: 5px 15px;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 45%;
+
+}
+
+.btn-starting {
+    /* padding: 10px 20px; */
+    background-color: var(--blue-color);
+    border-radius: var(--border-radius);
+    border: none;
+    color: var(--white-color);
+    font-size: x-large;
+
 }
 
 /* Modal */
@@ -85,7 +104,6 @@ aside>img {
     color: var(--white-color);
 }
 
-
 .modal-header {
     background-color: var(--blue-color);
 }
@@ -102,10 +120,39 @@ aside>img {
     border: none;
     color: var(--back-color);
     font-size: x-large;
-    margin-top: 5%; 
+    margin-top: 5%;
 
 }
 
 .symbol {
     width: 10%;
+}
+
+.users-list {
+    background-color: var(--grey-color);
+    text-transform: capitalize;
+    text-align: left;
+    font-size: 25px;
+    width: 60%;
+    margin: auto;
+
+}
+
+.modal-block {
+    background-color: var(--grey-color);
+}
+
+.users-list td {
+    padding-top: 2%;
+    border-bottom: 2px solid;
+    border-color: var(--back-color);
+}
+.bi{
+    scale:1;
+    transition: var(--time-animation);
+}
+
+.bi:hover {
+    scale: 1.2;
+    transition: var(--time-animation) scale;
 }

@@ -21,14 +21,14 @@
       <i class="bi bi-caret-left-fill icon-style"></i>
     </a>
   </div>
-  <section class="row g-0">
+  <div class="row g-0">
     <article class="col-6">
 
     </article>
     <article class="col-6">
       <div class="row text-center" style="margin: 5% 0px;">
         <div class="col-12">
-          <img class="logo-style" src="./image/logo.png">
+          <img class="logo-style" src="./image/logo.png" alt="logo-home">
         </div>
       </div>
       <div class="row g-0">
@@ -38,21 +38,20 @@
               <h3>Rejoins la salle virtuelle</h3>
             </div>
             <form action="./pages/student/waiting_room.html" class="join-session-form" name="formSaisie">
-              <p>
               <div class="row" style="padding: 20px 80px;">
-                <input type="text" class="row" placeholder="Nom" name="name" id="name" required />
+                <input type="text" class="row" placeholder="Nom" name="name" id="name" required>
               </div>
               <div class="row" style="padding: 20px 80px;">
-                <input type="number" class="row" placeholder="Code : 100 - 199" id="code" minlength="3" maxlength="3"
-                  min="100" max="999" name="code" required>
+                <input type="number" class="row" placeholder="Code : 100 - 199" id="code" min="100" max="999"
+                  name="code" required>
               </div>
               <input type="submit" class="btn-action" value="Rejoindre">
-              </p>
             </form>
           </div>
         </div>
+      </div>
     </article>
-  </section>
+  </div>
 
   <!-- Modal -->
   <div class="modal fade" id="menu-left" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -63,19 +62,17 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <form action="./pages/intervener/select_activity.html" class="modal-body" name="formSaisie">
-          <p>
           <div class="row" style="padding: 20px 80px;">
             <input type="text" class="login" placeholder="Identifiant" name="identifiant" id="identifiant" minlength="3"
-              maxlength="15" required />
+              maxlength="15" required>
           </div>
           <div class="row" style="padding: 20px 80px;">
             <input type="password" class="login" placeholder="Mot de passe" id="pswd" required
               pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}$">
             <a href="" class="password-forgot"> Mot de passe oublié</a>
           </div>
-          <input type="submit" class="btn-modal" value="Connexion" />
-          </p>
-          <img class="logo-modal" src="./image/logo.png">
+          <input type="submit" class="btn-modal" value="Connexion">
+          <img class="logo-modal" src="./image/logo.png" alt="logo-footer">
         </form>
       </div>
     </div>
