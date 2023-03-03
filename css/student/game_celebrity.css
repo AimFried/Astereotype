@@ -64,7 +64,7 @@ h1 {
     border: none;
     padding: 0;
     margin: 0;
-    height: 230px
+    height: 270px
 }
 
 .disability-zone {
@@ -155,3 +155,31 @@ h1 {
     }
 }
 
+.correct {
+    background-color: green;
+}
+
+.error {
+    background-color: red;
+}
+
+.btn-music{
+    padding: 10px 25px;
+    font-size:22px ;
+    line-height:40px ;
+    min-width: 150px;
+    text-align: center;
+    cursor: pointer;
+    background:linear-gradient(to right bottom, #273c75, #079992 );
+    color:#fff;
+    border-radius: 5px;
+    border: 0px;
+    height: 60px;
+}
+
+*,*:after,*:before{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+     box-sizing: border-box;
+}

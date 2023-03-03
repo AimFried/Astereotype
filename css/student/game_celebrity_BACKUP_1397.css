@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+@import url("//fonts.googleapis.com/css?family=Slackey");
+
+:root {
+ /*Polices d'écriture*/
+ --font-body : 'Poppins';
+ --font-title : 'Slackey';
+}
+
+
+body::-webkit-scrollbar {
+    display: none;
+    background-color: var(--white-color);
+}
+
+h1 {
+    padding-top: 1%;
+    padding-left: 45%;
+    font-family: var(--font-title);
+}
+
+#div1,
+#div2,
+#div3,
+#div4,
+#div5,
+#div6,
+#div7 {
+    width: 122px;
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
+    align-items: center;
+    margin: auto;
+}
+
+.instruction {
+    margin-left: 1%;
+    font-family: var(--font-body);
+    font-weight: bold;
+}
+
+.logo-style {
+    margin: auto;
+    width: auto;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.top-band {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+
+.img-perso {
+    width: auto;
+    height: 180px;
+}
+
+.footer {
+    background-color: var(--blue-color);
+    display: block;
+    border: none;
+    padding: 0;
+    margin: 0;
+    height: 270px
+}
+
+.disability-zone {
+    outline: none;
+    border-radius: var(--border-radius);
+    margin: 0 auto;
+    background-color: white;
+    border: none;
+    align-self: center;
+}
+
+.disability-name {
+    height: 30px;
+    width: 100px;
+    border: none;
+    outline: none;
+    border-radius: var(--border-radius);
+    background-color: white;
+    margin: 0 auto;
+    font-family: var(--font-body);
+}
+
+.btn-validation-game {
+    padding: 5px 15px;
+    background-color: var(--grey-color);
+    border-radius: var(--border-radius);
+    border: none;
+    color: var(--back-color);
+    font-size: x-large;
+    margin-left: 48%;
+    position: relative;
+    font-family: var(--font-body);
+    scale: 1;
+    transition: var(--time-animation);
+}
+
+.btn-validation-game:hover {
+    background-color: var(--hover-btn-color);
+    scale: 1.1;
+    transition: var(--time-animation) scale;
+
+}
+
+@media (max-width: 815px) and (min-width: 612px) {
+    .btn-validation-game {
+        font-size: medium;
+    }
+
+    .disability-name {
+        font-size: small;
+        height: 21px;
+        width: 70px;
+    }
+
+    #div1.disability-zone,
+    #div2.disability-zone,
+    #div3.disability-zone,
+    #div4.disability-zone,
+    #div5.disability-zone,
+    #div6.disability-zone,
+    #div7.disability-zone {
+        width: 85.4px;
+        height: 35px;
+    }
+}
+
+
+@media (max-width: 611px) {
+    .btn-valider-jeu {
+        font-size: x-small;
+    }
+
+    #div1.disability-zone,
+    #div2.disability-zone,
+    #div3.disability-zone,
+    #div4.disability-zone,
+    #div5.disability-zone,
+    #div6.disability-zone,
+    #div7.disability-zone {
+        width: 73.2px;
+        height: 30px;
+    }
+
+    .disability-name {
+        font-size: small;
+        height: 18px;
+        width: 60px;
+    }
+}
+
+.correct {
+    background-color: green;
+}
+
+.error {
+    background-color: red;
+}
