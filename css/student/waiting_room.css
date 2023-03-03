@@ -2,9 +2,9 @@
 @import url("//fonts.googleapis.com/css?family=Slackey");
 
 :root {
- /*Polices d'écriture*/
- --font-body : 'Poppins';
- --font-title : 'Slackey';
+    /*Polices d'écriture*/
+    --font-body: 'Poppins';
+    --font-title: 'Slackey';
 }
 
 
@@ -34,7 +34,7 @@ body {
 .top-banner-title {
     color: var(--white-color);
     font-family: var(--font-title);
-    
+
 }
 
 .bottom-banner-style {
@@ -45,7 +45,7 @@ body {
     opacity: 0.7;
 }
 
-.backgroundImg{
+.backgroundImg {
     size-adjust: auto;
     position: center 20%;
     appearance: fixed;
