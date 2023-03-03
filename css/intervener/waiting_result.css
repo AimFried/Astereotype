@@ -46,6 +46,7 @@ img {
 
 .progress-bar {
     font-size: 18px !important;
+    font-family: var(--font-body) !important;
     background-color: var(--blue-color) !important;
     transition: var(--time-animation) !important;
 }
