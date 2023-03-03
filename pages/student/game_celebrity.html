@@ -17,6 +17,14 @@
     <!-- Drag and Drop -->
 
     <script>
+        let gameCelebrities
+        // Get gameCelebrities data
+        fetch("../../database/jeuCelebrite_bd.json")
+            .then((response) => response.json())
+            .then((json) => {
+                gameCelebrities = json
+            });
+
         const personnes = []
         // Drag and drop
         function allowDrop(ev) {
@@ -30,32 +38,58 @@
         function drop(ev) {
             ev.preventDefault();
             var data = ev.dataTransfer.getData("text");
+            console.warn(data)
+            console.warn(ev.dataTransfer)
             ev.target.appendChild(document.getElementById(data));
             console.log(ev);
         }
 
-        function checkPersons() {
-            const personsElements = document.getElementsByClassName('person');
-            let check = true;
-            for (const el of personsElements) {
-                check &&= checkPerson(el.id);
-            }
-            console.log(check);
-        }
+        function validate(e) {
+            e.preventDefault();
 
-        function checkPerson(personId) {
-            const personEl = document.getElementById(personId);
-            const personData = persons[personId];
-            if (personEl && personData) {
-                const disabilitiesElements =
-                    personEl.getElementsByClassName('disablity');
-                if (disabilitiesElements.length > 0) {
-                    if (personData.disability === disabilitiesElements[0].id) {
-                        return true;
+            //Reset classes (if the game is validated multiple times) 
+            document.querySelectorAll('.error').forEach(tag => tag.classList.remove('error'))
+            document.querySelectorAll('.correct').forEach(tag => tag.classList.remove('correct'))
+
+
+            //Get all tag with name personality
+            let personalityNodes = document.querySelectorAll('[name=personality]');
+
+            //For each personality
+            personalityNodes.forEach(personalityNode => {
+
+                //Get the data-nom attribute
+                let personality = personalityNode.getAttribute('data-nom');
+                //Get the disability tag
+                let disabilityNode = personalityNode.querySelector('[name=disability]');
+
+                //Get the gameCelebrity from the json
+                let gameCelebrity = gameCelebrities.find(celebrite => celebrite.nom === personality)
+
+                // If disability tag has a response
+                if (disabilityNode.children.length) {
+                    //Get the data-handicap attribute
+                    let disability = disabilityNode.children[0].getAttribute('data-handicap');
+
+                    //if the answer is correct
+                    if (disability === gameCelebrity.handicap) {
+                        //Correct logic
+                        console.log(gameCelebrity.nom + " is correct")
+                        alert ("nom positionne : " + gameCelebrity.nom)
+                        disabilityNode.classList.add('correct')
+                    } else {
+                        //Incorrect logic
+                        console.log(gameCelebrity.nom + " is incorrect")
+                        disabilityNode.classList.add('error')
                     }
+                } else {
+                    //No response
+                    console.log(gameCelebrity.nom + " is not answered")
+                    disabilityNode.classList.add('error')
                 }
-            }
-            return false;
+            })
+
+
         }
     </script>
 </head>
@@ -76,118 +110,127 @@
             Associer les handicaps avec la célébrité qui lui correspond
         </h4>
         <form class="formJeu">
-            <div class="row text-center my-5" style="margin: 3% 0px;">
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="personne" data-nom="Dinklage" ondrop="drop(event)"
-                                ondragover="allowDrop(event)">
-                                <div><img class="img-perso" src="../../image/th-modified.png"></div>
-                                <div class="disability-zone" id="div1">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="personne" data-nom="Montagne" ondrop="drop(event)"
-                                ondragover="allowDrop(event)">
-                                <div><img class="img-perso"
-                                        src="../../image/6358-gilbert-montagne-624x600-1-modified.png">
-                                </div>
-                                <div class="disability-zone" id="div2">
-                                </div>
+        <div class="row text-center my-5" style="margin: 3% 0px;">
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div name="personality" class="personne" data-nom="Dinklage" ondrop="drop(event)"
+                            ondragover="allowDrop(event)">
+                            <div><img class="img-perso" src="../../image/th-modified.png"></div>
+                            <div name="disability" class="disability-zone" id="div1">
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="personne" data-nom="Cruise" ondrop="drop(event)" ondragover="allowDrop(event)">
-                                <div><img class="img-perso" src="../../image/Tom-Cruise-modified.png"></div>
-                                <div class="disability-zone" id="div3">
-                                </div>
+                    <div class="col-sm-6">
+                        <div name="personality" class="personne" data-nom="Montagne" ondrop="drop(event)"
+                            ondragover="allowDrop(event)">
+                            <div><img class="img-perso" src="../../image/6358-gilbert-montagne-624x600-1-modified.png">
                             </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="personne" data-nom="Potter" ondrop="drop(event)" ondragover="allowDrop(event)">
-                                <div><img class="img-perso"
-                                        src="../../image/glee-lauren-potter-in-una-foto-promozionale-della-stagione-3-213619-modified.png">
-                                </div>
-                                <div class="disability-zone" id="div4">
-                                </div>
+                            <div name="disability" class="disability-zone" id="div2">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row text-center my-1" style="margin: 5% 0px;">
-                <div class="col-md-8">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="personne" data-nom="Matlin" ondrop="drop(event)" ondragover="allowDrop(event)">
-                                <div><img class="img-perso" src="../../image/Marlee Matlin-modified.png"></div>
-                                <div class="disability-zone" id="div5">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="personne" data-nom="Messi" ondrop="drop(event)" ondragover="allowDrop(event)">
-                                <div><img class="img-perso" src="../../image/lionel-modified.png"></div>
-                                <div class="disability-zone" id="div6">
-                                </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div name="personality" class="personne" data-nom="Cruise" ondrop="drop(event)"
+                            ondragover="allowDrop(event)">
+                            <div><img class="img-perso" src="../../image/Tom-Cruise-modified.png"></div>
+                            <div name="disability" class="disability-zone" id="div3">
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="personne" data-nom="Kahlo" ondrop="drop(event)" ondragover="allowDrop(event)">
-                        <div><img class="img-perso" src="../../image/Frida-Kahlo-modified.png"></div>
-                        <div class="disability-zone" id="div7"></div>
+                    <div class="col-sm-6">
+                        <div name="personality" class="personne" data-nom="Potter" ondrop="drop(event)"
+                            ondragover="allowDrop(event)">
+                            <div><img class="img-perso"
+                                    src="../../image/glee-lauren-potter-in-una-foto-promozionale-della-stagione-3-213619-modified.png">
+                            </div>
+                            <div name="disability" class="disability-zone" id="div4" ondrop="drop(event)"
+                                ondragover="allowDrop(event)">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="footer">
-                <div class="row text-center">
-                    <div class="col" style="margin: 2% 0px;">
-                        <div class="disability-name grab" draggable="true" ondragstart="drag(event)" id="drag1"
-                            width="88" height="31" data-handicap="Cécité">
-                            Cécité</div>
+        </div>
+        <div class="row text-center my-1" style="margin: 5% 0px;">
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div name="personality" class="personne" data-nom="Matlin" ondrop="drop(event)"
+                            ondragover="allowDrop(event)">
+                            <div><img class="img-perso" src="../../image/Marlee Matlin-modified.png"></div>
+                            <div name="disability" class="disability-zone" id="div5" ondrop="drop(event)"
+                                ondragover="allowDrop(event)">
+                            </div>
+                        </div>
                     </div>
-                    <div class="col" style="margin: 2% 0px;">
-                        <div class="disability-name grab" draggable="true" ondragstart="drag(event)" id="drag2"
-                            width="88" height="31" data-handicap="Nanisme">
-                            Nanisme</div>
-                    </div>
-                    <div class="col" style="margin: 2% 0px;">
-                        <div class="disability-name grab" draggable="true" ondragstart="drag(event)" id="drag3"
-                            width="88" height="31" data-handicap="Autisme">
-                            Autisme</div>
-                    </div>
-                    <div class="col" style="margin: 2% 0px;">
-                        <div class="disability-name grab" draggable="true" ondragstart="drag(event)" id="drag4"
-                            width="88" height="31" data-handicap="Surdité">
-                            Surdité</div>
-                    </div>
-                    <div class="col" style="margin: 2% 0px;">
-                        <div class="disability-name grab" draggable="true" ondragstart="drag(event)" id="drag5"
-                            width="88" height="31" data-handicap="Dyslexie">
-                            Dyslexie</div>
-                    </div>
-                    <div class="col" style="margin: 2% 0px;">
-                        <div class="disability-name grab" draggable="true" ondragstart="drag(event)" id="drag6"
-                            width="88" height="31" data-handicap="Polyomélite">
-                            Polyomélite</div>
-                    </div>
-                    <div class="col" style="margin: 2% 0px;">
-                        <div class="disability-name grab" draggable="true" ondragstart="drag(event)" id="drag7"
-                            width="88" height="31" data-handicap="Trisomie21">
-                            Trisomie 21</div>
+                    <div class="col-sm-6">
+                        <div name="personality" class="personne" data-nom="Messi" ondrop="drop(event)"
+                            ondragover="allowDrop(event)">
+                            <div><img class="img-perso" src="../../image/lionel-modified.png"></div>
+                            <div name="disability" class="disability-zone" id="div6" ondrop="drop(event)"
+                                ondragover="allowDrop(event)">
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <button onclick="checkPersons()" class="btn-validation-game">
-                    Valider
-                </button>
-        </form class="formJeu">
+            </div>
+            <div class="col-md-4">
+                <div name="personality" class="personne" data-nom="Kahlo" ondrop="drop(event)"
+                    ondragover="allowDrop(event)">
+                    <div><img class="img-perso" src="../../image/Frida-Kahlo-modified.png"></div>
+                    <div name="disability" class="disability-zone" id="div7" ondrop="drop(event)"
+                        ondragover="allowDrop(event)"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="row text-center">
+            <div class="col" style="margin: 2% 0px;">
+                <div class="disability-name grab" draggable="true" ondragstart="drag(event)" id="drag1" width="88"
+                    height="31" data-handicap="Cécité">
+                    Cécité</div>
+            </div>
+            <div class="col" style="margin: 2% 0px;">
+                <div class="disability-name grab" draggable="true" ondragstart="drag(event)" id="drag2" width="88"
+                    height="31" data-handicap="Nanisme">
+                    Nanisme</div>
+            </div>
+            <div class="col" style="margin: 2% 0px;">
+                <div class="disability-name grab" draggable="true" ondragstart="drag(event)" id="drag3" width="88"
+                    height="31" data-handicap="Autisme">
+                    Autisme</div>
+            </div>
+            <div class="col" style="margin: 2% 0px;">
+                <div class="disability-name grab" draggable="true" ondragstart="drag(event)" id="drag4" width="88"
+                    height="31" data-handicap="Surdité">
+                    Surdité</div>
+            </div>
+            <div class="col" style="margin: 2% 0px;">
+                <div class="disability-name grab" draggable="true" ondragstart="drag(event)" id="drag5" width="88"
+                    height="31" data-handicap="Dyslexie">
+                    Dyslexie</div>
+            </div>
+            <div class="col" style="margin: 2% 0px;">
+                <div class="disability-name grab" draggable="true" ondragstart="drag(event)" id="drag6" width="88"
+                    height="31" data-handicap="Polyomélite">
+                    Polyomélite</div>
+            </div>
+            <div class="col" style="margin: 2% 0px;">
+                <div class="disability-name grab" draggable="true" ondragstart="drag(event)" id="drag7" width="88"
+                    height="31" data-handicap="Trisomie 21">
+                    Trisomie 21</div>
+            </div>
+        </div>
+        <button class="btn-validation-game" onclick="validate(event)">
+            Valider
+        </button>
+        </form>
     </div>
 
 </body>

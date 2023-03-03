@@ -139,3 +139,11 @@ h1 {
         width: 60px;
     }
 }
+
+.correct {
+    background-color: green;
+}
+
+.error {
+    background-color: red;
+}
