@@ -27,6 +27,7 @@ body::-webkit-scrollbar {
 
 .header-text {
     text-transform: uppercase;
+    font-family: var(--font-title);
 }
 
 article {

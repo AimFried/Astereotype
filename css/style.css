@@ -109,6 +109,7 @@ input[type=password] {
 .modal-title {
     margin-left: auto;
     color: var(--white-color);
+    font-family: var(--font-title);
 }
 
 

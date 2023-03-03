@@ -42,6 +42,7 @@ body{
     border-top-left-radius: var(--border-radius);
     padding: 10px 0px;
     color: var(--white-color);
+    font-family: var(--font-title) !important;
 }
 
 section {
