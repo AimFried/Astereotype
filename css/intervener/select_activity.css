@@ -27,12 +27,14 @@ body::-webkit-scrollbar {
 
 .header-text {
     text-transform: uppercase;
+    font-family: var(--font-title);
 }
 
 article {
     padding: 5% 10%;
     font-size: 20px;
     text-align: justify;
+    font-family: var(--font-body);
 
 }
 
@@ -82,6 +84,7 @@ aside>img {
     border: none;
     color: var(--white-color);
     font-size: x-large;
+    font-family: var(--font-body);
 
 }
 
@@ -135,6 +138,7 @@ aside>img {
     font-size: 25px;
     width: 60%;
     margin: auto;
+    font-family: var(--font-body);
 
 }
 
