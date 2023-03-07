@@ -54,7 +54,6 @@
 
             //Get all tag with name personality
             let personalityNodes = document.querySelectorAll('[name=personality]');
-
             //For each personality
             personalityNodes.forEach(personalityNode => {
 
@@ -74,20 +73,19 @@
                     //if the answer is correct
                     if (disability === gameCelebrity.handicap) {
                         //Correct logic
-                        console.log(gameCelebrity.nom + " is correct")
-                        alert("Vous avez trouvé le bon handicap pour : " + gameCelebrity.nom)
+                       check.push({name: gameCelebrity.nom, status:'correct'})
                         disabilityNode.classList.add('correct')
                     } else {
                         //Incorrect logic
-                        console.log(gameCelebrity.nom + " is incorrect")
+                        check.push({name: gameCelebrity.nom, status:'incorrect'})
                         disabilityNode.classList.add('error')
                     }
                 } else {
                     //No response
-                    console.log(gameCelebrity.nom + " is not answered")
                     disabilityNode.classList.add('error')
                 }
             })
+
         }
 
         //Audio
